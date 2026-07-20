@@ -314,6 +314,47 @@ main {
   color: var(--white);
 }
 
+.coming-soon {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px 28px 100px;
+  text-align: center;
+}
+
+.coming-text {
+  font-size: 26px;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 36px;
+}
+
+.coming-text strong {
+  color: var(--tertiary);
+}
+
+.coming-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 40px;
+  border: 3px solid var(--primary);
+  border-radius: 20px;
+  background: #111;
+  box-shadow: 0 0 20px rgba(255, 62, 0, 0.15);
+}
+
+.coming-badge span {
+  font-family: "PressStart2P", monospace;
+  font-size: clamp(14px, 2vw, 18px);
+  color: var(--white);
+}
+
+.coming-badge small {
+  font-family: "VT323", monospace;
+  font-size: 26px;
+  color: var(--secondary);
+}
+
 /* ---------- Footer ---------- */
 
 .footer {
