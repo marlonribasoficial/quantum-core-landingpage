@@ -439,36 +439,52 @@ main {
   color: var(--accent);
 }
 
+/* Botão de acesso ao TestFlight */
 .coming-badge {
   display: inline-flex;
-  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 20px 40px;
-  border: 1px solid rgba(255, 122, 26, 0.5);
-  border-radius: 20px;
+  gap: 16px;
+  padding: 16px 30px;
+  border: 2px solid var(--accent);
+  border-radius: 18px;
   background: var(--surface);
-  box-shadow: 0 0 20px rgba(255, 122, 26, 0.15);
+  box-shadow: 0 0 20px rgba(255, 122, 26, 0.18);
   text-decoration: none;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .coming-badge:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 28px rgba(255, 122, 26, 0.28);
+  background: #171b23;
+  box-shadow: 0 0 30px rgba(255, 122, 26, 0.35);
 }
 
-.coming-badge span {
+.coming-badge .tf-icon {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  fill: var(--accent);
+}
+
+.coming-badge .tf-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.coming-badge .tf-label strong {
   font-family: "PressStart2P", monospace;
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: clamp(12px, 1.6vw, 15px);
   color: var(--cream);
 }
 
-.coming-badge small {
-  font-family: "VT323", monospace;
-  font-size: 26px;
+.coming-badge .tf-label small {
+  font-family: var(--sans);
+  font-size: 14px;
   color: var(--accent);
+  margin-top: 4px;
 }
 
 /* ---------- Privacy Policy section ---------- */
