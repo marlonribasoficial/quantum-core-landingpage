@@ -459,6 +459,18 @@ main {
   box-shadow: 0 0 28px rgba(255, 122, 26, 0.28);
 }
 
+.coming-badge span {
+  font-family: "PressStart2P", monospace;
+  font-size: clamp(14px, 2vw, 18px);
+  color: var(--cream);
+}
+
+.coming-badge small {
+  font-family: "VT323", monospace;
+  font-size: 26px;
+  color: var(--accent);
+}
+
 /* ---------- Privacy Policy section ---------- */
 
 .legal {
