@@ -449,18 +449,14 @@ main {
   border-radius: 20px;
   background: var(--surface);
   box-shadow: 0 0 20px rgba(255, 122, 26, 0.15);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.coming-badge span {
-  font-family: "PressStart2P", monospace;
-  font-size: clamp(14px, 2vw, 18px);
-  color: var(--cream);
-}
-
-.coming-badge small {
-  font-family: "VT323", monospace;
-  font-size: 26px;
-  color: var(--accent);
+.coming-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(255, 122, 26, 0.28);
 }
 
 /* ---------- Privacy Policy section ---------- */
