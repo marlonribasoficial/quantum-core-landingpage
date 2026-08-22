@@ -356,6 +356,25 @@ main {
   padding: 20px 28px 80px;
 }
 
+.demo-video {
+  max-width: 1000px;
+  margin: 0 auto 48px;
+  border: 1px solid rgba(242, 236, 222, 0.14);
+  border-radius: 20px;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(255, 122, 26, 0.08);
+}
+
+.demo-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+
 .screen-grid {
   max-width: 1100px;
   margin: 0 auto;
